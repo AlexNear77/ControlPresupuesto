@@ -34,8 +34,9 @@ function App() {
         },350)
   }
 
+  //NOTA:  modal ? 'fijar' : ''    ===    modal && 'fijar' 
   return (
-    <div >
+    <div className={modal ? 'fijar' : ''} > 
         <Header
           presupuesto={presupuesto}
           setPresupuesto={setPresupuesto}
