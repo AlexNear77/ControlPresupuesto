@@ -27,11 +27,11 @@ const diccionarioIconos ={
     suscripciones : IconoSuscripciones
 }
 
-export default function gasto({gasto}) {
+export default function gasto({gasto, setGastoEditar}) {
 
     const leadingActions = () => (
         <LeadingActions>
-            <SwipeAction onClick={() => console.log('oa')}>
+            <SwipeAction onClick={() => setGastoEditar(gasto)}>
                 Editar
             </SwipeAction>
         </LeadingActions>
